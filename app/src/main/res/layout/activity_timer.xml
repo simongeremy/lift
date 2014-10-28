@@ -1,0 +1,63 @@
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textAlignment="center"
+    android:background="@android:color/white">
+
+
+    <ImageButton
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:id="@+id/buttonStop"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/stop" />
+
+    <ImageButton
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:id="@+id/buttonStart"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/start"
+        android:layout_alignTop="@id/buttonStop" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@id/buttonStop"
+        android:id="@+id/linearLayout2">
+        <Chronometer
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:id="@+id/chronometer"
+            android:textColor="@android:color/holo_purple"
+            android:textAlignment="center"
+            android:autoText="false"
+            android:editable="false"
+            android:linksClickable="false"
+            android:textIsSelectable="false"
+            android:gravity="center|center_vertical|center_horizontal|fill_vertical"
+            android:clickable="false"
+            android:layout_gravity="center|left|right|top"
+            android:textStyle="bold"
+            android:enabled="false"
+            android:textSize="40dp"
+            android:layout_marginLeft="110dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="false"
+        android:background="@drawable/image_app"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_marginBottom="90dp" />
+</RelativeLayout>
